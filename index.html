@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Library Management System 📚</h1>
+</div>
+
+<div class="login-container">
+
+    <!-- ADMIN LOGIN -->
+    <div class="login-card">
+        <h2>Admin Login</h2>
+        <input type="text" id="adminUser" placeholder="Admin Username">
+        <input type="password" id="adminPass" placeholder="Password">
+        <button onclick="adminLogin()">Login</button>
+        <p class="error" id="adminError"></p>
+    </div>
+
+    <!-- USER LOGIN -->
+    <div class="login-card">
+        <h2>User Login</h2>
+        <input type="text" id="userUser" placeholder="User Username">
+        <input type="password" id="userPass" placeholder="Password">
+        <button onclick="userLogin()">Login</button>
+        <p class="error" id="userError"></p>
+    </div>
+
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div id="adminPanel" class="panel hidden">
+    <h2>Admin Dashboard</h2>
+    <div class="btn-group">
+        <button onclick="showAddBook()">Add Book</button>
+        <button onclick="showBooks()">View Books</button>
+        <button onclick="showMembers()">Membership</button>
+        <button onclick="showTransactions()">Transactions</button>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+    <div id="adminContent"></div>
+</div>
+
+<!-- USER DASHBOARD -->
+<div id="userPanel" class="panel hidden">
+    <h2>User Dashboard</h2>
+    <div class="btn-group">
+        <button onclick="showBooks()">View Books</button>
+        <button onclick="issueBook()">Issue Book</button>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+    <div id="userContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

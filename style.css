@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.login-card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 14px 14px 14px 20px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
+
+.panel {
+    width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.panel h2 {
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.logout {
+    background: #e53e3e;
+}
+
+.logout:hover {
+    background: #c53030;
+}
+
+.hidden {
+    display: none;
+}
+
+.book {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #f2f2f2;
+}
