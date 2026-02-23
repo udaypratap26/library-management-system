@@ -62,5 +62,4 @@ A browser-based **Library Management System** developed using **HTML, CSS, and J
 
 
 
-## 👨‍🎓 Developed By
-UDAY PRATAP SINGH
+
